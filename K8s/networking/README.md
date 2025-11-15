@@ -61,8 +61,6 @@ This policy ensures that only the backend pods can initiate connections to the M
     - `/` → forwards to frontend service on port 80
     - `/api/` → forwards to backend service on port 5000
 - **Path Type:** Prefix (prefix-based routing with regex capture)
-- **Annotations**:
-  - `nginx.ingress.kubernetes.io/rewrite-target: /$1` — rewrites the request URI using regex capture groups before forwarding to the backend.
 
 ---
 
