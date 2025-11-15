@@ -94,11 +94,11 @@ Ensure that you have the following installed:
       ```
     - **Tag the image:** 
       ```bash
-      docker tag bookverse-backend:latest username/repository:latest
+      docker tag bookverse-backend:latest your-username/repository:latest
       ```
     - **Push the image to docker hub:** 
       ```bash
-      docker push username/repository:latest
+      docker push your-username/repository:latest
       ```
 
 5. **Deploy to Kubernetes:**
