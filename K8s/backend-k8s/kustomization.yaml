@@ -1,0 +1,3 @@
+resources:
+- backend-deploy.yaml
+- backend-service.yaml

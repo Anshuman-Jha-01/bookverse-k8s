@@ -1,0 +1,5 @@
+resources:
+- mongo-deploy.yaml
+- mongo-service.yaml
+- mongo-pv.yaml
+- mongo-pvc.yaml
