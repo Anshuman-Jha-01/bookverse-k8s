@@ -64,13 +64,13 @@ This Kubernetes setup defines deployments, services, and persistent storage for 
 ### 🔹 Backend
 - **Deployment**: `backend-deploy`
 - **Service**: `backend`
-- **Image**: `anshumanjha/bookverse-backend:latest`
+- **Image**: `your-username/bookverse-backend:latest` (Update in the yaml file as well)
 - **Port**: `5000`
 
 ### 🔹 Frontend
 - **Deployment**: `frontend-deploy`
 - **Service**: `frontend`
-- **Image**: `anshumanjha/bookverse-frontend:latest`
+- **Image**: `your-username/bookverse-frontend:latest` (Update in the yaml file as well)
 - **Port**: `80`
 
 ### 🔹 MongoDB
