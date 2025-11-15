@@ -80,11 +80,11 @@ Ensure that you have the following installed:
       ```
     - **Tag the image:** 
       ```bash 
-      docker tag bookverse-frontend:latest your-username/repository:latest
+      docker tag bookverse-frontend:latest your-username/bookverse-frontend:latest
       ```
     - **Push the image to docker hub:** 
       ```bash
-      docker push your-username/repository:latest
+      docker push your-username/bookverse-frontend:latest
       ```
 
 4. **Deploy to Kubernetes:**
