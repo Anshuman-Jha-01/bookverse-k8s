@@ -98,31 +98,37 @@ This Kubernetes setup defines deployments, services, and persistent storage for 
     cd kind
     kind create cluster --name=cluster-01 --config=config.yaml
     ```
+2. **Install Calico CNI:** Follow the instructions written in the ```README.md``` file inside the ```networking``` directory.
 
-2. **Apply MongoDB resources:**
+3. **Create ```bookverse``` namespace**:
+   ```bash
+   kubectl create namespace bookverse
+   ```
+
+4. **Apply MongoDB resources:**
    ```bash
    cd db-k8s
    kubectl kustomize . | kubectl apply -f-
    ```
 
-3. **Apply Backend resources:**
+5. **Apply Backend resources:**
     ```bash
     cd backend-k8s
     kubectl kustomize . | kubectl apply -f-
     ```
 
-4. **Apply Frontend resources:**
+6. **Apply Frontend resources:**
     ```bash
     cd frontend-k8s
     kubectl kustomize . | kubectl apply -f-
     ```
 
-5. **Verify deployments and services:**
+7. **Verify deployments and services:**
     ```bash
     kubectl get pods -n bookverse
     kubectl get svc -n bookverse 
     ```
-6. **Setup Ingress and NetworkPolicy:** Follow the instructions written in the ```README.md``` file inside the ```networking``` directory.
+8. **Setup Ingress and NetworkPolicy:** Follow the instructions written in the ```README.md``` file inside the ```networking``` directory.
 
 ---
 
